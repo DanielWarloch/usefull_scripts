@@ -1,6 +1,19 @@
 #!/bin/bash
 
-sudo apt install curl python3 python3-pip python3-venv zsh git ranger tree fonts-firacode -y
+sudo apt install curl nload python3 python3-pip python3-venv zsh git ranger tree fonts-firacode cmatrix tmux -y
+
+pip3 install bpytop speedtest-cli
+
+# Gdu, a simple and fast disk usage analyzer
+curl -L https://github.com/dundee/gdu/releases/latest/download/gdu_linux_amd64.tgz | tar xz
+chmod +x gdu_linux_amd64
+sudo mv gdu_linux_amd64 /usr/bin/gdu
+
+# Terminal web browser
+wget https://github.com/browsh-org/browsh/releases/download/v1.6.4/browsh_1.6.4_linux_amd64.deb
+sudo apt install ./browsh_1.6.4_linux_amd64.deb
+rm ./browsh_1.6.4_linux_amd64.deb
+
 
 # Install Oh My ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

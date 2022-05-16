@@ -47,6 +47,6 @@ sed -i 's/^plugins=(git)$/plugins=(git\n\tsudo\n\tautojump\n\tgit-extra-commands
 
 wget https://raw.githubusercontent.com/DanielWarloch/usefull_scripts/main/.aliases -O ~/.aliases
 echo 'source $HOME/.aliases' >> ~/.zshrc
-
+chsh -s $(which zsh)
 
 exec zsh

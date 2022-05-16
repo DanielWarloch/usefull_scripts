@@ -2,6 +2,8 @@
 
 sudo apt install curl nload python3 python3-pip python3-venv zsh git ranger tree fonts-firacode cmatrix tmux -y
 
+zsh
+
 pip3 install bpytop speedtest-cli
 
 # Gdu, a simple and fast disk usage analyzer
@@ -42,3 +44,5 @@ echo 'if ! $(echo $PATH |grep -q ~/.local/bin1); then export PATH=~/.local/bin:$
 # Add Powerlevel10k to .zshrc
 sed -i -E 's/^ZSH_THEME=".*"+$/ZSH_THEME="powerlevel10k\/powerlevel10k"\n/g' ~/.zshrc 
 sed -i 's/^plugins=(git)$/plugins=(git\n\tsudo\n\tautojump\n\tgit-extra-commands\n\tzsh-autosuggestions\n\tzsh-syntax-highlighting # Must be at the end\n)/g' ~/.zshrc
+
+exec zsh

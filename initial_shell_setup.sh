@@ -45,4 +45,8 @@ echo 'if ! $(echo $PATH |grep -q ~/.local/bin1); then export PATH=~/.local/bin:$
 sed -i -E 's/^ZSH_THEME=".*"+$/ZSH_THEME="powerlevel10k\/powerlevel10k"\n/g' ~/.zshrc 
 sed -i 's/^plugins=(git)$/plugins=(git\n\tsudo\n\tautojump\n\tgit-extra-commands\n\tzsh-autosuggestions\n\tzsh-syntax-highlighting # Must be at the end\n)/g' ~/.zshrc
 
+wget https://raw.githubusercontent.com/DanielWarloch/usefull_scripts/main/aliases -O ~/.aliases
+echo 'source $HOME/.aliases' >> ~/.zshrc
+
+
 exec zsh

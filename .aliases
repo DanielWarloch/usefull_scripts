@@ -132,6 +132,12 @@ alias ff=ff13
 
 alias browser=chrome
 
+alias untar='tar -zxvf '
+
+alias getpass="openssl rand -base64 20"
+
+alias sha='shasum -a 256 '
+
 
 # ----------------------
 # Git Aliases

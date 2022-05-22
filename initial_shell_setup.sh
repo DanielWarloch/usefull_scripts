@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install curl nload python3 python3-pip zsh git ranger tree fonts-firacode cmatrix tmux -y
+sudo apt install curl colordiff nload python3 python3-pip zsh git ranger tree fonts-firacode cmatrix tmux -y
 
 zsh
 

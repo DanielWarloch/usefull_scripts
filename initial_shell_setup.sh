@@ -38,7 +38,7 @@ git clone https://github.com/unixorn/git-extra-commands.git ${ZSH_CUSTOM:-~/.oh-
 
 
 
-echo 'if ! $(echo $PATH |grep -q ~/.local/bin1); then export PATH=~/.local/bin:$PATH; fi' >> ~/.zshrc
+echo 'if ! $(echo $PATH |grep -q ~/.local/bin); then export PATH=~/.local/bin:$PATH; fi' >> ~/.zshrc
 
 
 # Add Powerlevel10k to .zshrc
